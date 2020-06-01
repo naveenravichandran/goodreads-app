@@ -1,0 +1,35 @@
+.pagination {
+  position: fixed;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  bottom: 0px;
+  height: 45px;
+  background-color: #ff5079;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 25px;
+  width: 100%;
+
+  .page-field {
+    display: inline-block;
+    border: 0.5px solid white;
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 0px 5px;
+    min-width: 15px;
+
+    &.clickable {
+      cursor: pointer;
+
+      span:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.current {
+      border: 0.5px solid #ff50b8;
+    }
+  }
+}
